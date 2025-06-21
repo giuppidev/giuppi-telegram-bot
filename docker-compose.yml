@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  bot:
+    build: .
+    # Create a .env file in the same directory as this docker-compose.yml
+    # and add your BOT_TOKEN to it.
+    # Example .env file:
+    # BOT_TOKEN=123456:ABC-DEF1234567890
+    # REQUIRED_REACTIONS=5
+
+    restart: unless-stopped
